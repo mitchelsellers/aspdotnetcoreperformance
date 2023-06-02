@@ -18,6 +18,17 @@ namespace AspNetCorePerformanceDemo.Controllers
             return View();
         }
 
+        [ResponseCache(Duration = 30)]
+        public IActionResult IndexCached()
+        {
+            return View("Index");
+        }
+
+        public IActionResult ElementCached()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
