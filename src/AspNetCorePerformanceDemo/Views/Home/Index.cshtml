@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IndexModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -8,5 +10,6 @@
 </div>
 
 <div>
-    <h2>The Current Time Is @DateTime.Now</h2>
+    <h2>The Current Time Is @Model.CurrentTime</h2>
+    <h2>The Cached Time Is @Model.CachedCurrentTime</h2>
 </div>
